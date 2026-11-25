@@ -63,8 +63,12 @@
   function frameHTML(p, i) {
     if (p.type === 'soon') return '<div class="frame frame--soon"><div class="frame__media"><span class="soonq">?</span><div class="soon-bar"></div></div><div class="frame__gloss"></div></div>';
     var host = '';
-    if (p.type === 'web' && p.links && p.links[0]) { try { host = new URL(p.links[0].href).host; } catch (e) {} }
-    var bar = p.type === 'web' ? '<div class="bar"><i></i><i></i><i></i><span>' + esc(host || 'your-site.com') + '</span></div>' : '';
+    if (p.type === 'web') {
+      if (p.host === 'here') host = location.host || '';
+      else if (p.host) host = p.host;
+      else if (p.links && p.links[0]) { try { host = new URL(p.links[0].href).host; } catch (e) {} }
+    }
+    var bar = p.type === 'web' ? '<div class="bar"><i></i><i></i><i></i><span>' + esc(host) + '</span></div>' : '';
     return '<div class="frame">' + bar + '<div class="frame__media">' + mediaHTML(p, i) + '</div><div class="frame__gloss"></div></div>';
   }
 

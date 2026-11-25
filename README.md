@@ -48,6 +48,8 @@ Put the files in `assets/images/` with exactly these names. Until a file exists,
 | This Website | `assets/images/this-website.jpg` |
 | Link preview (optional) | `assets/images/og.jpg`, then see the `og:image` TODO in `index.html` |
 
+The two live games (indianbrainrot.vercel.app and hollowpoint.vercel.app) are not screenshotted yet: open each one, take a screenshot and save it as `indian-brainrot.jpg` / `hollowpoint.jpg`.
+
 Tips: about 1600×1000 (16:10), under 400 KB each. Different file names or extensions (`.png`, `.webp`) are fine, just change `image:` for that project in `js/config.js`.
 
 Want a looping clip instead of a still? Drop an `.mp4`/`.webm` in `assets/video/` and set `video: 'assets/video/ultron.mp4'` on the project. Extra screenshots go in `gallery: [...]` and crossfade inside the frame.
