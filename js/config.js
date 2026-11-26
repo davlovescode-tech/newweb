@@ -65,7 +65,7 @@ window.SITE = {
       short: 'My very first portfolio website.',
       desc: 'The first portfolio website I ever made. A snapshot of where I started.',
       tags: ['Website', 'Portfolio'],
-      links: [],                 // TODO  still missing: add [{label:'Visit the site', href:'https://...'}] with the link to the first portfolio
+      links: [{ label: 'Visit it ', href: 'https://daviscrazyfs.vercel.app' }],                 // TODO  still missing: add [{label:'Visit the site', href:'https://...'}] with the link to the first portfolio
       image: 'assets/images/first-portfolio.jpg', video: '', gallery: [],
       theme: 'sky'
     },
@@ -115,7 +115,7 @@ window.SITE = {
       short: 'Hollow Point: gunshot localization system.',
       desc: 'Hollow Point is my gunshot localization system. Set the wind speed and direction, pick a bunker, a wall or a vehicle, and it predicts where the shot came from, then shows the error against the real location.',
       tags: ['Game', 'Simulation', 'Browser'],
-      links: [{ label: 'Open it', href: 'https://hollowpoint.vercel.app' }],
+      links: [{ label: 'Open it', href: 'https://hollowpoint-five.vercel.app' }],
       image: 'assets/images/hollowpoint.jpg', video: '', gallery: [],
       theme: 'ember'
     },
